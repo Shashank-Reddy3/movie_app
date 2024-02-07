@@ -1,0 +1,40 @@
+ .nav{
+    /* background-color: #000; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    height: 4rem;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: 0.3s linear;
+    
+ }
+ .nav_black{
+    background: #000;
+ }
+.nav_contents{
+    display: flex;
+    justify-content: space-between;
+    
+} 
+.logo_n{
+    position: fixed;
+    left: 0;
+    top: 1.7rem;
+    width: 100px;
+    object-fit: contain;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.logo_a{
+    position: fixed;
+    top: 0.5rem;
+    right: 20px;
+    width: 44px;
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: 0.3rem;
+
+}

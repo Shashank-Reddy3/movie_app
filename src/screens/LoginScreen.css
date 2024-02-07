@@ -1,0 +1,162 @@
+.loginScreen{
+    position: relative;
+   height: 100%;
+   background: 
+    url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg") no-repeat center;
+   
+   background-size: cover;
+  
+}
+
+.loginScreen_gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+
+}
+.loginScreen_logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    top: 1rem;
+    padding-left: 20px;
+}
+.loginScreen_btn{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #e50914;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.loginScreen_btn:active{
+    background: #d4040e;
+}
+
+
+.loginScreen_body{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;     
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.loginScreen_body > h1{
+ font-size: 3.125rem;
+}
+.loginScreen_body > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+}
+.loginScreen_body > h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.loginScreen_input{
+    margin: 20px;
+}
+
+.loginScreen_input >form >input{
+    padding: 16px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+    
+    
+    outline-width: 0;
+    height: 46px;
+    width: 50%;
+    border: none;
+    max-width: 600px;
+    
+}
+.loginScreen_input >form >input::placeholder{
+    font-size: 1rem;
+    color: #000;
+
+}
+
+.loginScreen_start{
+    padding: 14px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.loginScreen_start:active{
+    background: #d4040e;
+}
+
+ 
+
+/* media queries */
+@media (max-width:540px){
+.loginScreen_logo{
+    width: 100px;
+}
+.loginScreen_btn{
+    top: 8px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+.loginScreen_body{
+    top: 26%;
+}
+
+.loginScreen_body > h1{
+    font-size: 2rem;
+   }
+   .loginScreen_body > h2{
+    font-size: 1.4rem;
+   }
+   .loginScreen_body > h3{
+    font-size: 1rem;
+   }
+
+   .loginScreen_input >form >input{    
+    width: 55%;
+    height: 36px;
+    
+}
+
+.loginScreen_start{
+    padding: 10px 10px;
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width:300px){
+    .loginScreen_input >form >input{    
+       display: none;
+    }
+    
+    .loginScreen_start{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 6px;
+    }
+}
